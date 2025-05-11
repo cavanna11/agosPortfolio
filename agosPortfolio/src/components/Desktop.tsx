@@ -22,9 +22,9 @@ const Desktop: React.FC = () => {
 
       {openWindows.map(folderName => (
         <Window key={folderName} title={folderName} onClose={() => closeWindow(folderName)}>
-          {folderName === "Sobre mí" && <img src="/src/assets/aboutme.png" id='aboutmeContent' alt="Sobre mí" />}
-          {folderName === "Proyectos" && <img src="/src/assets/aboutme.png" id='' alt="Proyectos" style={{ width: '100%' }} />}
-          {folderName === "Contacto" && <img src="/src/assets/aboutme.png" id='' alt="Contacto" style={{ width: '100%' }} />}
+          {folderName === "Sobre mí" && <img src="/public/aboutme.png" id='aboutmeContent' alt="Sobre mí" />}
+          {folderName === "Proyectos" && <img src="/public/aboutme.png" id='' alt="Proyectos" style={{ width: '100%' }} />}
+          {folderName === "Contacto" && <img src="/public/aboutme.png" id='' alt="Contacto" style={{ width: '100%' }} />}
         </Window>
       ))}
     </div>
