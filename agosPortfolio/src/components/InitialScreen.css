@@ -1,0 +1,59 @@
+/* Estilo para la pantalla inicial */
+.initial-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+&::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/mar.jpg);
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+.enter-button {
+  padding: 10px 50px;
+  font-size: 20px;
+  color: white;
+  background-color: #003246;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.enter-button:hover {
+  background-color: #fff;
+  color: #003246;
+  transition: ease-in-out 0.3s;
+}
+
+.titulo{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Media queries para hacer la pantalla inicial responsive */
+@media (max-width: 768px) {
+  .titulo {
+    font-size: 2em;
+  }
+
+  .enter-button {
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+}

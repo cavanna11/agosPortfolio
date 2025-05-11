@@ -1,0 +1,83 @@
+/* Estilo para las ventanas */
+.window {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 80em;
+  height: 50em;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  top: 5em;
+  left: 25em;
+}
+
+.window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3e3fd;
+  background-repeat: no-repeat;
+  padding: 10px 0 0px 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+   span{
+    font-size: 1em;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 10px 10px 0px 0;
+
+   }
+}
+
+.window-header button {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+    /* font-size: 1.2em; */
+
+}
+.window-header button:hover {
+    background-color: #ffffff59;
+}
+
+.window-content {
+  margin-top: 2em;
+  margin-right: 5em;
+  width: 100%;
+  justify-content: center;
+  text-align: start;
+  text-justify: start;
+
+}
+
+/* Asegurar que las imágenes dentro de las ventanas se ajusten al tamaño */
+.window-content img {
+  width: 100%;
+  height: 42em;
+  object-fit: cover;
+}
+
+/* Media queries para hacer las ventanas responsive */
+@media (max-width: 768px) {
+  .window {
+    width: 90%;
+    height: auto;
+    top: 10%;
+    left: 5%;
+  }
+
+  .window-content img {
+    height: auto;
+  }
+}
+
+
+
+
